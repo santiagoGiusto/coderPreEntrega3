@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: fit-content;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img .boton-hover {
+  display: block;
+  padding: 2%;
+  border-radius: 5px;
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
+  color: white;
+}
+.header {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin: 0;
+}
+.header .icono {
+  width: 50px;
+  margin-left: 10px;
+}
+.header .icono img {
+  width: 100%;
+}
+.header a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+.header h1 {
+  font-size: 35px;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.header span {
+  font-weight: 300;
+  font-style: italic;
+  display: none;
+}
+
+
+@media (min-width: 480px) {
+  .header h1 span {
+    font-weight: 300;
+    font-style: italic;
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    justify-content: center;
+    gap: 15px;
+    margin: 5px 0;
+    width: 100%;
+  }
+  .header .icono {
+    width: 70px;
+  }
+  .header h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .header .icono {
+    width: 100px;
+  }
+  .header h1 {
+    font-size: 75px;
+  }
+}
+
+.titulo {
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
+  color: white;
+  margin-top: 0.2%;
+  margin-bottom: 0;
+}
+.titulo span {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 0;
+}
+
+@media (min-width: 480px) {
+  .titulo {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .titulo span {
+    font-size: 30px;
+  }
+}
+
+.vinos-catalogo {
+  width: 100%;
+}
+.vinos-catalogo h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 2%;
+}
+.vinos-catalogo .catalogo-productos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.vinos-catalogo .catalogo-productos h4 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 10px 0;
+  display: block;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img {
+  width: 50%;
+  transition: 0.5s;
+  position: relative;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img:hover img {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img:hover button {
+  display: block;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img:hover h5 {
+  display: block;
+  position: absolute;
+  left: 6%;
+  bottom: .5%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 88%;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img img {
+  width: 90%;
+  border-radius: 5px;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img .boton-hover {
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  padding: 0.5% 3%;
+  display: none;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img .boton-fantasma {
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  padding: 0.5% 3%;
+  display: block;
+  border-radius: 5px;
+  border-color: white;
+  border-style: double;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img h5 {
+  display: none;
+}
+
+
+@media (min-width: 480px) {
+  .vinos-catalogo-titulo {
+    font-size: 25px;
+    margin: 1.5% 0 60% 0;
+  }
+}
+@media (min-width: 768px) {
+  .vinos-catalogo h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 1.5% 0 2% 0;
+  }
+  .vinos-catalogo .catalogo-productos .catalogo-img {
+    width: 24%;
+  }
+  .vinos-catalogo .catalogo-productos .catalogo-img:hover {
+    scale: 1.1;
+  }
+  .vinos-catalogo .catalogo-productos .catalogo-img:hover h4 {
+    font-weight: 400;
+  }
+  .vinos-catalogo .catalogo-productos .catalogo-img:hover img {
+    border: solid black 1px;
+  }
+  .vinos-catalogo .catalogo-productos .catalogo-img:hover button {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .vinos-catalogo .catalogo-productos h4 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .vinos-catalogo .catalogo-productos h4 {
+    font-size: 22px;
+  }
+}
+
+.cebra-uno {
+  width: 100%;
+  height: 25px;
+  margin-top: 2%;
+}
+.cebra-dos {
+  display: block;
+  width: 100%;
+  height: 25px;
+}
+.vino-cebra {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .cebra-dos {
+    display: block;
+    width: 100%;
+    height: 35px;
+  }
+  .cebra-uno {
+    display: block;
+    width: 100%;
+    height: 35px;
+  }
+}
+.carrito {
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  align-items: center;
+  border: solid black 1px;
+  width: 38%;
+  justify-content: space-around;
+}
+.carrito .carritoHead {
+  margin-top: 2%;
+  width: 40%;
+  text-align: center;
+}
+.carrito .carritoHead .carritoImg {
+  width: 45%;
+}
+.carrito .carritoProductos {
+  margin-top: 1%;
+  padding: 3%;
+  text-align: start;
+}
+.carrito .carritoProductos p .cartel {
+  width: 220%;
+}
+
+.carrito .carritoProductos .productosEnCarrito {
+  margin: 0;
+}
+
+.carrito .carritoProductos .contenedor-columnas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.carrito .carritoProductos .contenedor-columnas .columna-producto {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.carrito .carritoProductos .contenedor-columnas .columna-cantidad {
+  width: 30px;
+  text-align: center;
+}
